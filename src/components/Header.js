@@ -12,7 +12,7 @@ const Header = () => {
           <a href="/home">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/4/45/Rait_new_logo_png.png"
-              alt=""
+              alt="logo"
             />
           </a>
         </Logo>
