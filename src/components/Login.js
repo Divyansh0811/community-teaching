@@ -9,8 +9,11 @@ const Login = (props) => {
   return (
     <Container>
       <Nav>
-        <a class = "logo" href="/">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Rait_new_logo_png.png" alt="" />
+        <a class="logo" href="/">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/45/Rait_new_logo_png.png"
+            alt=""
+          />
         </a>
         <div>
           <Join>
@@ -25,7 +28,7 @@ const Login = (props) => {
       </Nav>
       <Section>
         <Hero>
-          {/* <h1>Welcome to RAIT</h1> */}
+          <h1>Welcome to RAIT</h1>
           <img src="/images/login-hero.svg" alt="" />
         </Hero>
         <Form>
@@ -58,7 +61,7 @@ const Nav = styled.nav`
   & > a {
     width: 135px;
     height: 34px;
-    
+
     @media (max-width: 768px) {
       padding: 0 5px;
     }
@@ -147,7 +150,7 @@ const Hero = styled.div`
     position: absolute;
     right: 150px;
     bottom: 150px;
-   
+
     top: 20px;
     @media (max-width: 768px) {
       top: 300px;

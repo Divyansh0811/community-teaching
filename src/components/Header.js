@@ -10,7 +10,10 @@ const Header = () => {
       <Content>
         <Logo>
           <a href="/home">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Rait_new_logo_png.png" alt="" />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/45/Rait_new_logo_png.png"
+              alt=""
+            />
           </a>
         </Logo>
         <Search>
@@ -62,7 +65,7 @@ const Header = () => {
             </NavList>
 
             <NavList>
-              <a>
+              <a href="http://tbolis.github.io/showcase/react-sketch/">
                 <img src="/images/whiteboard.png" alt="" />
                 <span>Whiteboard</span>
               </a>
@@ -71,7 +74,7 @@ const Header = () => {
               <a>
                 <img src={user.photo} alt="" />
                 <span>Me</span>
-                <img src="/images/down-icon.svg" alt="" />
+                <img src="/images/down-icon.svg" class="down" />
               </a>
               <SignOut onClick={() => auth.signOut()}>
                 <a>Sign Out</a>
@@ -118,7 +121,7 @@ const Content = styled.div`
 const Logo = styled.div`
   a {
     margin-right: 8px;
-    
+
     img {
       width: 130px;
     }
@@ -255,6 +258,7 @@ const User = styled(NavList)`
     width: 24px;
     height: 24px;
     border-radius: 50%;
+
     span {
       display: flex;
       align-items: center;
@@ -268,10 +272,14 @@ const User = styled(NavList)`
       align-items: center;
       justify-content: center;
       display: flex;
-      @media(max-width: 768px) {
-                top: 100px;
-            }
+      @media (max-width: 768px) {
+        top: 100px;
+      }
     }
+  }
+  .down {
+    margin-bottom: -6px;
+    margin-top: -4px;
   }
 `;
 const Work = styled(User)`
