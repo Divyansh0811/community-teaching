@@ -60,21 +60,15 @@ const Layout = styled.div`
   display: grid;
   grid-template-areas: "leftside main rightside";
   grid-template-columns: minmax(0, 5fr) minmax(0, 12fr), minmax(300px, 7fr);
-  column-gap: 25px;
+  column-gap: 10px;
   /* row-gap: 25px; */
   /* grid-template-rows: auto; */
-  margin: 0px 181px 0px 25px;
+  margin: 0px 373px 0px 32px;
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     padding: 0 5px;
   }
 `;
-// display: grid;
-// grid-template-areas: "leftside main rightside";
-// grid-template-columns: minmax(0,5fr) minmax(0,12fr),minmax(300px,7fr);
-// -webkit-column-gap: 25px;
-// column-gap: -5px;
-// margin: 0px 181px 0px -1px;
-// }
+
 export default Home;
