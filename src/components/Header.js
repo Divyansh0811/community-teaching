@@ -103,6 +103,7 @@ const Container = styled.div`
   padding: 0;
   position: fixed;
   top: 0;
+  margin-left: 10px;
   width: 400vw;
   z-index: 100;
 `;

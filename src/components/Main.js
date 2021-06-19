@@ -151,7 +151,11 @@ function Main() {
 
 const Container = styled.div`
   grid-area: main;
-  width: 100%;
+  margin-right: 340px;
+  width: 78%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const CommonCard = styled.div`

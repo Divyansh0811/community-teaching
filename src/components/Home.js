@@ -12,10 +12,7 @@ const Home = (props) => {
         <h5>
           <a>Have a Doubt? -</a>
         </h5>
-        <p>
-          {" "}
-          Ask your doubt and get it solved.
-        </p>
+        <p> Ask your doubt and get it solved.</p>
       </Section>
       <Layout>
         <LeftSide />
@@ -59,11 +56,11 @@ const Section = styled.div`
 const Layout = styled.div`
   display: grid;
   grid-template-areas: "leftside main rightside";
-  grid-template-columns: minmax(0, 5fr) minmax(0, 12fr), minmax(300px, 7fr);
+  grid-template-columns: minmax(5, 2fr) minmax(0, 12fr), minmax(300px, 7fr);
   column-gap: 10px;
   /* row-gap: 25px; */
   /* grid-template-rows: auto; */
-  margin: 0px 373px 0px 32px;
+  margin: 0px 25px 0px 25px;
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;

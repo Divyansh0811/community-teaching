@@ -149,7 +149,7 @@ function Article({ Id, question, imageUrl, timestamp, users }) {
                 // paddingBottom: "17px",
                 // paddingRight: "350px",
                 borderBottom: "1px solid rgba(0,0,0,0.4)",
-                margin: "8px 0px 0px 0px",
+                margin: "8px 0px 0px 0",
               }}
             >
               {Id === answers.questionId ? (
@@ -373,7 +373,7 @@ const Answers = styled.div`
   position: relative;
   border: none;
   box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 /20%);
-  /* border-bottom: "1px solid rgba(0,0,0,0.09)"; */
+  border-bottom: "1px solid rgba(0,0,0,0.09)";
 `;
 
 const ModalQuestion = styled.div`
