@@ -87,6 +87,10 @@ const Join = styled.a`
     text-decoration: none;
     border-radius: 4px;
   }
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    margin-left: 90px;
+  }
 `;
 
 const SignIn = styled.a`
@@ -105,6 +109,9 @@ const SignIn = styled.a`
   &:hover {
     background-color: rgba(112, 181, 249, 0.15);
     text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    margin-left: 90px;
   }
 `;
 
@@ -142,6 +149,7 @@ const Hero = styled.div`
       font-size: 20px;
       width: 100%;
       font-size: 56px;
+      margin-left: 10px;
     }
   }
   img {
@@ -156,7 +164,7 @@ const Hero = styled.div`
       top: 300px;
       width: 350px;
       position: initial;
-      margin-left: 60px;
+      margin-left: 15px;
       height: initial;
     }
   }
@@ -166,8 +174,9 @@ const Form = styled.div`
   margin-top: 100px;
   width: 408px;
   @media (max-width: 768px) {
+    width: 350px;
     margin-top: 20px;
-    margin-left: -20px;
+    margin-left: -50px;
   }
 `;
 const Google = styled.button`

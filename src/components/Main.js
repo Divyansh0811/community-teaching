@@ -152,7 +152,8 @@ function Main() {
 const Container = styled.div`
   grid-area: main;
   margin-left: 35px;
-  width: 190%;
+  width: 170%;
+  max-width: 190%;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 6px;
@@ -243,6 +244,12 @@ const ModalTitle = styled.div`
       width: 10px;
     }
   }
+  @media (max-width: 768px) {
+    margin-left: 60px;
+    button {
+      margin-left: 180px;
+    }
+  }
 `;
 const ModalInfo = styled.div`
   display: flex;
@@ -254,11 +261,14 @@ const ModalInfo = styled.div`
   p {
     margin: 27px 0px 0px 6px;
   }
+  @media (max-width: 768px) {
+    margin-left: 60px;
+  }
 `;
 const ModalField = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 20px;
   flex: 1;
   input {
     width: 100%;
@@ -270,6 +280,9 @@ const ModalField = styled.div`
     &:hover {
       border: none;
     }
+  }
+  @media (max-width: 768px) {
+    margin-left: 60px;
   }
 `;
 const ModalButtons = styled.div`
@@ -285,6 +298,10 @@ const ModalButtons = styled.div`
     border-radius: 10px;
     align-items: center;
     justify-content: center;
+  }
+  @media (max-width: 768px) {
+    margin-left: -50px;
+    margin-bottom: 50px;
   }
 `;
 export default Main;

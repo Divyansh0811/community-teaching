@@ -33,9 +33,6 @@ const Container = styled.div`
   background-color: rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(0, 0, 0, 0.09);
   margin-bottom: 25px;
-  @media (max-width: 768px) {
-    margin-left: -28px;
-  }
 `;
 
 const QuoteTop = styled.div`
@@ -43,7 +40,7 @@ const QuoteTop = styled.div`
   font-size: 30px;
   margin-left: 130px;
   @media (max-width: 768px) {
-    margin-left: 180px;
+    margin-left: 140px;
   }
 `;
 

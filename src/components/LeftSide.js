@@ -44,7 +44,7 @@ const Container = styled.div`
   width: 300px;
   @media (max-width: 768px) {
     width: 80%;
-    margin-left: 45px;
+    margin-left: 34px;
     margin-top: 10px;
     margin-bottom: 10px;
   }

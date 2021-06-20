@@ -118,10 +118,6 @@ function Article({ Id, question, imageUrl, timestamp, users }) {
                   {users.displayName ? users.displayName : users.email}
                 </span>{" "}
                 {""}
-                on{" "}
-                <span className="name">
-                  {new Date(timestamp?.toDate()).toLocaleString()}
-                </span>
               </p>
             </ModalQuestion>
             <ModalAnswer>
@@ -344,6 +340,9 @@ const SocialActions = styled.div`
       background-color: rgba(0, 0, 0, 0.08);
     }
   }
+  @media (max-width: 768px) {
+    width: 800px;
+  }
 `;
 
 const ViewAnswers = styled(SocialActions)`
@@ -392,12 +391,21 @@ const ModalQuestion = styled.div`
   p {
     margin: 6px 0px 0px 10px;
   }
+  @media (max-width: 768px) {
+    margin-left: 47px;
+    button {
+      margin-left: 340px;
+    }
+  }
 `;
 const ModalAnswer = styled.div`
   textarea {
     margin: 15px 8px 0px 0px;
     width: 100%;
     height: 200px;
+  }
+  @media (max-width: 768px) {
+    margin-left: 48px;
   }
 `;
 const ModalButtons = styled.div`

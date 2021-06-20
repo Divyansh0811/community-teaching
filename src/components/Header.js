@@ -46,7 +46,7 @@ const Header = () => {
             <NavList>
               <a>
                 <img src="/images/nav-network.svg" alt="" />
-                <span>Live Lecture</span>
+                <span>Lectures</span>
               </a>
             </NavList>
 
@@ -103,7 +103,6 @@ const Container = styled.div`
   padding: 0;
   position: fixed;
   top: 0;
-  margin-left: 10px;
   width: 400vw;
   z-index: 100;
 `;
@@ -125,6 +124,11 @@ const Logo = styled.div`
 
     img {
       width: 130px;
+    }
+  }
+  @media (max-width: 768px) {
+    a {
+      margin-left: -29px;
     }
   }
 `;
@@ -221,7 +225,7 @@ const NavList = styled.nav`
       /* min-width: 70px; */
       background-color: #fff;
       border-top: 0.1px solid rgba(0, 0, 0, 0.2);
-      min-width: 68px;
+      min-width: 50px;
       min-height: 65px;
     }
   }
