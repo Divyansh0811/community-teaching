@@ -69,7 +69,7 @@ function Main() {
 
           <button>
             <img src="/images/edit.png" />
-            <span>Write Article</span>
+            <span>Ask Question</span>
           </button>
         </div>
         <Modal
@@ -151,10 +151,11 @@ function Main() {
 
 const Container = styled.div`
   grid-area: main;
-  margin-right: 340px;
-  width: 78%;
+  margin-left: 35px;
+  width: 190%;
   @media (max-width: 768px) {
     width: 100%;
+    margin-left: 6px;
   }
 `;
 
