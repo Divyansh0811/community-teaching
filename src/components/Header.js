@@ -65,7 +65,7 @@ const Header = () => {
             </NavList>
 
             <NavList>
-              <a href="http://tbolis.github.io/showcase/react-sketch/">
+              <a href="/whiteboard">
                 <img src="/images/whiteboard.png" alt="" />
                 <span>Whiteboard</span>
               </a>

@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
 import { auth } from "./components/firebase";
+import Whiteboard from './components/whiteboard'
+
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
@@ -29,9 +31,15 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route exact path="">
-          {user ? <Home /> : <Login />}
-        </Route>
+        <Switch>
+          <Route exact path="/" component={user ? Home  : Login}/> 
+          
+
+          <Route  path="/whiteboard" component={Whiteboard}/>
+            
+          
+        </Switch>
+        
       </Router>
     </div>
   );
