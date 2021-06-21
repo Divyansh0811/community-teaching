@@ -12,12 +12,12 @@ const Rightside = (props) => {
 };
 
 const Container = styled.div`
-  width: 300px;
   font-family: "Merriweather", serif;
-  margin-left: 350px;
+  margin-left: 20px;
+  width: 23%;
   @media (max-width: 768px) {
     width: 100%;
-    margin: 10px 20px 20px 3px;
+    margin: 10px 30px 20px 3px;
   }
 `;
 

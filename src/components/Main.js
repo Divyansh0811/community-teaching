@@ -150,16 +150,11 @@ function Main() {
 }
 
 const Container = styled.div`
-  grid-area: main;
-  margin-left: 50px;
-  width: 180%;
-
+  width: 60%;
+  margin-left: 24px;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 6px;
-  }
-  @media (width: 1440px) {
-    width: 160%;
   }
 `;
 

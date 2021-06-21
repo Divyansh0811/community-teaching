@@ -54,10 +54,8 @@ const Section = styled.div`
 `;
 
 const Layout = styled.div`
-  display: grid;
-  grid-template-areas: "leftside main rightside";
-  grid-template-columns: minmax(0, 5fr) minmax(0, 14fr), minmax(0, 5fr);
-  column-gap: 10px;
+  display: flex;
+
   /* row-gap: 25px; */
   /* grid-template-rows: auto; */
   margin: 0px 25px 0px 25px;

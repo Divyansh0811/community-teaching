@@ -40,8 +40,7 @@ const LeftSide = (props) => {
 };
 
 const Container = styled.div`
-  grid-area: leftside;
-  width: 300px;
+  width: 350px;
   @media (max-width: 768px) {
     width: 80%;
     margin-left: 34px;

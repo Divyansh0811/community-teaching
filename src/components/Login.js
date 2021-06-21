@@ -8,210 +8,85 @@ const Login = (props) => {
   };
   return (
     <Container>
-      <Nav>
-        <a class="logo" href="/">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/4/45/Rait_new_logo_png.png"
-            alt=""
-          />
-        </a>
-        <div>
-          <Join>
-            <a>
-              <h1>Join Now</h1>
-            </a>
-          </Join>
-          <SignIn>
-            <h1>Sign In</h1>
-          </SignIn>
-        </div>
-      </Nav>
-      <Section>
-        <Hero>
-          <h1>Welcome to RAIT</h1>
-          <img src="/images/login-hero.svg" alt="" />
-        </Hero>
-        <Form>
-          <Google onClick={googleSignIn}>
-            <img src="/images/google.svg" alt="" />
-            Join with Google
-          </Google>
-        </Form>
-      </Section>
+      <Logo>
+        <img src="https://lh3.googleusercontent.com/proxy/OHeAoKrpW2BpDQh53uyBOjYvtDhLYBJD1DulOTDThlsXJBnQpzSnkMMN-nsORtv60W5EtmOiPSJE_XAyID_2ZBs1e_WUrujaPn6iqTVHaCvCvRzmQmoiHn343jrHm30TxO4Kcw" />
+      </Logo>
+      <MainInfo>Welcome To RAIT</MainInfo>
+      <Form>
+        <Google onClick={googleSignIn}>
+          <img src="/images/google.svg" alt="" />
+          Sign in with Google
+        </Google>
+      </Form>
     </Container>
   );
 };
 
 const Container = styled.div`
-  padding: 0px;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/slide-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
-const Nav = styled.nav`
-  max-width: 1128px;
-  margin: auto;
+
+const MainInfo = styled.div`
+  font-family: "Open Sans", sans-serif;
+  color: white;
   align-items: center;
   justify-content: center;
-  padding: 12px 0 16px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  img {
-    width: 200px;
-    margin-top: -20px;
-  }
-  & > a {
-    width: 135px;
-    height: 34px;
-
-    @media (max-width: 768px) {
-      padding: 0 5px;
-      position: initial;
-    }
-  }
-`;
-
-const Join = styled.a`
-  font-weight: 600;
-  display: inline-block;
-  font-size: 18px;
-  padding: 10px 12px;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.6);
-  margin-right: 12px;
-  cursor: pointer;
-  a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.6);
-  }
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.08);
-    color: rgba(0, 0, 0, 0.9);
-    text-decoration: none;
-    border-radius: 4px;
-  }
-  @media (max-width: 768px) {
-    margin-top: 20px;
-    margin-left: 90px;
-  }
-`;
-
-const SignIn = styled.a`
-  box-shadow: inset 0 0 0 1px #0a66c2;
-  display: inline-block;
-  color: #0a66c2;
-  border-radius: 24px;
-  transition-duration: 167ms;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 40px;
-  padding: 2px 24px;
   text-align: center;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0);
-  &:hover {
-    background-color: rgba(112, 181, 249, 0.15);
-    text-decoration: none;
-  }
-  @media (max-width: 768px) {
-    margin-left: 90px;
-  }
+  font-family: "Merriweather", serif;
+  margin-top: 120px;
+  font-size: 50px;
+  font-weight: bold;
 `;
 
-const Section = styled.section`
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  align-content: start;
-  min-height: 700px;
-  padding-bottom: 138px;
-  padding-top: 40px;
-  padding: 60px 0;
-  position: relative;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1128%;
-  align-items: center;
-  margin-left: 120px;
-  @media (max-width: 768px) {
-    margin: auto;
-    min-height: 0px;
-  }
-`;
-
-const Hero = styled.div`
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  h1 {
-    padding-bottom: 20px;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 56px;
-    color: #2977c9;
-    font-weight: 200;
-    line-height: 70px;
-    @media (max-width: 768px) {
-      text-align: center;
-      font-size: 20px;
-      width: 100%;
-      font-size: 56px;
-      margin-left: 10px;
-    }
-  }
+const Logo = styled.div`
   img {
-    align-items: center;
-    justify-content: center;
-    /* z-index: -1; */
-    width: 700px;
-    position: absolute;
-    right: 150px;
-    bottom: 150px;
-
-    top: 20px;
-    @media (max-width: 768px) {
-      top: 300px;
-      width: 350px;
-      position: initial;
-    }
+    margin: 10px;
+    width: 240px;
   }
 `;
-
 const Form = styled.div`
-  margin-top: 100px;
-  align-items: center;
-  justify-content: center;
   width: 408px;
+  margin: 40px auto;
   @media (max-width: 768px) {
-    width: 350px;
-    margin-top: 20px;
-    margin-left: -50px;
+    margin: 20px auto;
+    width: auto;
   }
 `;
+
 const Google = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  background-color: #fff;
   height: 56px;
-  cursor: pointer;
-  background-color: #ffff;
-  border-radius: 24px;
+  width: 100%;
+  border-radius: 30px;
   box-shadow: inset 0 0 0 1px rgb(0 0 0 / 60%), inset 0 0 0 2px rgb(0 0 0 / 0%),
-    inset 0 0 0 1px rgb(0 0 0 / 0%);
+    inset 0 0 0 1px rgb(0 0 0 / 0);
+  border: none;
   vertical-align: middle;
+  transition-duration: 167ms;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
   &:hover {
     background-color: rgba(207, 207, 207, 0.25);
     color: rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0 0 0 2px rgb(0 0 0 / 60%),
+      inset 0 0 0 3px rgb(0 0 0 / 0%), inset 0 0 0 2px rgb(0 0 0 / 0);
   }
-  @media (max-width: 768px) {
-    margin-left: 60px;
+  img {
+    margin-right: 25px;
   }
 `;
+
 export default Login;
