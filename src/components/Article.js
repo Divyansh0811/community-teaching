@@ -392,9 +392,9 @@ const ModalQuestion = styled.div`
     margin: 6px 0px 0px 10px;
   }
   @media (max-width: 768px) {
-    margin-left: 47px;
+    margin-left: 80px;
     button {
-      margin-left: 340px;
+      margin-left: 270px;
     }
   }
 `;
@@ -405,7 +405,8 @@ const ModalAnswer = styled.div`
     height: 200px;
   }
   @media (max-width: 768px) {
-    margin-left: 48px;
+    width: 60%;
+    margin-left: 87px;
   }
 `;
 const ModalButtons = styled.div`

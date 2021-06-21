@@ -9,7 +9,7 @@ const Header = () => {
     <Container>
       <Content>
         <Logo>
-          <a href="/home">
+          <a href="/">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/4/45/Rait_new_logo_png.png"
               alt="logo"
@@ -37,7 +37,7 @@ const Header = () => {
         <Nav>
           <NavListWrap>
             <NavList className="active">
-              <a href="/home">
+              <a href="/">
                 <img src="/images/nav-home.svg" alt="" />
                 <span>Home</span>
               </a>
@@ -65,7 +65,7 @@ const Header = () => {
             </NavList>
 
             <NavList>
-              <a href="/whiteboard">
+              <a href="/whiteboard" target="_blank">
                 <img src="/images/whiteboard.png" alt="" />
                 <span>Whiteboard</span>
               </a>

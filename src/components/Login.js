@@ -48,6 +48,8 @@ const Container = styled.div`
 const Nav = styled.nav`
   max-width: 1128px;
   margin: auto;
+  align-items: center;
+  justify-content: center;
   padding: 12px 0 16px;
   display: flex;
   align-items: center;
@@ -64,6 +66,7 @@ const Nav = styled.nav`
 
     @media (max-width: 768px) {
       padding: 0 5px;
+      position: initial;
     }
   }
 `;
@@ -73,6 +76,8 @@ const Join = styled.a`
   display: inline-block;
   font-size: 18px;
   padding: 10px 12px;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
   margin-right: 12px;
@@ -116,6 +121,8 @@ const SignIn = styled.a`
 `;
 
 const Section = styled.section`
+  align-items: center;
+  justify-content: center;
   display: flex;
   align-content: start;
   min-height: 700px;
@@ -136,8 +143,12 @@ const Section = styled.section`
 
 const Hero = styled.div`
   width: 100%;
+  align-items: center;
+  justify-content: center;
   h1 {
     padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
     width: 40%;
     font-family: "Times New Roman", Times, serif;
     font-size: 56px;
@@ -153,6 +164,8 @@ const Hero = styled.div`
     }
   }
   img {
+    align-items: center;
+    justify-content: center;
     /* z-index: -1; */
     width: 700px;
     position: absolute;
@@ -164,14 +177,14 @@ const Hero = styled.div`
       top: 300px;
       width: 350px;
       position: initial;
-      margin-left: 15px;
-      height: initial;
     }
   }
 `;
 
 const Form = styled.div`
   margin-top: 100px;
+  align-items: center;
+  justify-content: center;
   width: 408px;
   @media (max-width: 768px) {
     width: 350px;

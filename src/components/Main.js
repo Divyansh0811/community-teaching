@@ -151,12 +151,15 @@ function Main() {
 
 const Container = styled.div`
   grid-area: main;
-  margin-left: 35px;
-  width: 170%;
-  max-width: 190%;
+  margin-left: 50px;
+  width: 180%;
+
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 6px;
+  }
+  @media (width: 1440px) {
+    width: 160%;
   }
 `;
 
@@ -245,9 +248,9 @@ const ModalTitle = styled.div`
     }
   }
   @media (max-width: 768px) {
-    margin-left: 60px;
+    margin-left: 80px;
     button {
-      margin-left: 180px;
+      margin-left: 120px;
     }
   }
 `;
@@ -262,7 +265,7 @@ const ModalInfo = styled.div`
     margin: 27px 0px 0px 6px;
   }
   @media (max-width: 768px) {
-    margin-left: 60px;
+    margin-left: 80px;
   }
 `;
 const ModalField = styled.div`
@@ -282,7 +285,7 @@ const ModalField = styled.div`
     }
   }
   @media (max-width: 768px) {
-    margin-left: 60px;
+    margin-left: 90px;
   }
 `;
 const ModalButtons = styled.div`
@@ -300,7 +303,7 @@ const ModalButtons = styled.div`
     justify-content: center;
   }
   @media (max-width: 768px) {
-    margin-left: -50px;
+    margin-left: -100px;
     margin-bottom: 50px;
   }
 `;
