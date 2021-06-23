@@ -11,7 +11,10 @@ const Login = (props) => {
       {/* <Logo>
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Rait_new_logo_png.png" />
       </Logo> */}
-      <MainInfo>Welcome </MainInfo>
+      <MainInfo>
+        Welcome
+        <h3 class="changeData"></h3>
+      </MainInfo>
       <Form>
         <Google onClick={googleSignIn}>
           <img src="/images/google.svg" alt="" />
@@ -40,8 +43,32 @@ const MainInfo = styled.div`
   text-align: center;
   /* font-family: "Merriweather", serif; */
   margin-top: 260px;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
+  .changeData:after {
+    content: "";
+    animation: changetext 10s infinite linear;
+  }
+  @keyframes changetext {
+    0% {
+      content: "Ask/Solve a doubt";
+    }
+    20% {
+      content: "Live Lectures";
+    }
+    35% {
+      content: "Whiteboard";
+    }
+    60% {
+      content: "Books";
+    }
+    80% {
+      content: "Events";
+    }
+    100% {
+      content: "Live Test, Quiz";
+    }
+  }
   @media (max-width: 768px) {
     margin-top: 400px;
   }
@@ -67,7 +94,7 @@ const Google = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #d3d3d3;
   height: 56px;
   width: 100%;
   border-radius: 30px;
@@ -77,7 +104,7 @@ const Google = styled.button`
   vertical-align: middle;
   transition-duration: 167ms;
   font-size: 20px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.9);
   z-index: 0;
   &:hover {
     background-color: rgba(207, 207, 207, 0.25);

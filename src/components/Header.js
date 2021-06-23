@@ -62,8 +62,15 @@ const Header = () => {
             </NavList>
 
             <NavList>
-              <a href="https://60d31bbc775e211825118cc3--community-teaching-live-test.netlify.app/" target="_blank">
-                <img style = {{width:"40px"}} src="https://png.pngtree.com/png-vector/20191001/ourmid/pngtree-exam-icon-isolated-on-abstract-background-png-image_1776835.jpg" alt="" />
+              <a
+                href="https://60d31bbc775e211825118cc3--community-teaching-live-test.netlify.app/"
+                target="_blank"
+              >
+                <img
+                  style={{ width: "34px" }}
+                  src="https://png.pngtree.com/png-vector/20191001/ourmid/pngtree-exam-icon-isolated-on-abstract-background-png-image_1776835.jpg"
+                  alt=""
+                />
                 <span>Live Test</span>
               </a>
             </NavList>
