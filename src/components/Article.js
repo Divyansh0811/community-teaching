@@ -144,23 +144,25 @@ function Article({ Id, question, imageUrl, timestamp, users }) {
                 // paddingBottom: "17px",
                 // paddingRight: "350px",
                 borderBottom: "1px solid rgba(0,0,0,0.4)",
-                margin: "8px 0px 0px 0",
+                margin: "8px 2px 2px 8px",
               }}
             >
               {Id === answers.questionId ? (
                 <span>
-                  {answers.answer}
+                  {">"} {answers.answer}
                   <br />
                   <span
-                    style={{
-                      // position: "absolute",
-                      // color: "gray",
-                      // fontSize: "small",
-                      // display: "flex",
-                      right: "0px",
-                    }}
+                    style={
+                      {
+                        // position: "absolute",
+                        // color: "gray",
+                        // fontSize: "small",
+                        // display: "flex",
+                      }
+                    }
                   >
-                    <span style={{ color: "#b92b27" }}>
+                    <span style={{ color: "#b92b27", marginLeft: "20px" }}>
+                      -{" "}
                       {answers.user.displayName
                         ? answers.user.displayName
                         : answers.user.email}{" "}
@@ -360,15 +362,13 @@ const ViewAnswers = styled(SocialActions)`
 `;
 
 const Answers = styled.div`
-  padding: 0;
-  margin: 0 0 8px;
-  overflow: visible;
-  text-align: center;
   overflow: hidden;
   margin-bottom: 8px;
   background-color: #fff;
-  border-radius: 5px;
-  position: relative;
+  text-align: start;
+
+  border-radius: 10px;
+  /* position: relative; */
   border: none;
   box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 /20%);
   border-bottom: "1px solid rgba(0,0,0,0.09)";
@@ -378,6 +378,7 @@ const ModalQuestion = styled.div`
   button {
     flex: 0;
     margin-left: 450px;
+    cursor: pointer;
 
     border: none;
     img {
@@ -414,6 +415,7 @@ const ModalButtons = styled.div`
     margin-top: 10px;
     width: 100px;
     height: 25px;
+    cursor: pointer;
     border-radius: 10px;
     margin-left: 280px;
     justify-content: space-between;

@@ -8,10 +8,10 @@ const Login = (props) => {
   };
   return (
     <Container>
-      <Logo>
-        <img src="https://lh3.googleusercontent.com/proxy/OHeAoKrpW2BpDQh53uyBOjYvtDhLYBJD1DulOTDThlsXJBnQpzSnkMMN-nsORtv60W5EtmOiPSJE_XAyID_2ZBs1e_WUrujaPn6iqTVHaCvCvRzmQmoiHn343jrHm30TxO4Kcw" />
-      </Logo>
-      <MainInfo>Welcome To RAIT</MainInfo>
+      {/* <Logo>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Rait_new_logo_png.png" />
+      </Logo> */}
+      <MainInfo>Welcome </MainInfo>
       <Form>
         <Google onClick={googleSignIn}>
           <img src="/images/google.svg" alt="" />
@@ -30,21 +30,21 @@ const Container = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  ::-webkit-scrollbar {
-    display: none;
-  }
 `;
 
 const MainInfo = styled.div`
-  font-family: "Open Sans", sans-serif;
-  color: white;
+  font-family: "PT Serif", serif;
+  color: #f0f0f0;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "Merriweather", serif;
-  margin-top: 120px;
+  /* font-family: "Merriweather", serif; */
+  margin-top: 260px;
   font-size: 50px;
   font-weight: bold;
+  @media (max-width: 768px) {
+    margin-top: 400px;
+  }
 `;
 
 const Logo = styled.div`
@@ -55,14 +55,15 @@ const Logo = styled.div`
 `;
 const Form = styled.div`
   width: 408px;
-  margin: 40px auto;
+  margin: 20px auto;
   @media (max-width: 768px) {
     margin: 20px auto;
-    width: auto;
+    width: 330px;
   }
 `;
 
 const Google = styled.button`
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;

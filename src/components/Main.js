@@ -49,28 +49,28 @@ function Main() {
       <ShareBox>
         <div>
           <img src={user.photo} />
-          <button onClick={() => setIsModalOpen(true)}>Start a post</button>
+          <button onClick={() => setIsModalOpen(true)}>Ask a Question</button>
         </div>
         <div>
-          <button>
+          {/* <button>
             <img src="/images/image.png" />
             <span>Photo</span>
-          </button>
+          </button> */}
 
-          <button>
+          {/* <button>
             <img src="/images/video-camera.png" />
             <span>Video</span>
-          </button>
+          </button> */}
 
-          <button>
+          {/* <button>
             <img src="/images/event.png" />
             <span>Events</span>
-          </button>
+          </button> */}
 
-          <button>
+          {/* <button>
             <img src="/images/edit.png" />
             <span>Ask Question</span>
-          </button>
+          </button> */}
         </div>
         <Modal
           isOpen={IsmodalOpen}
@@ -151,7 +151,7 @@ function Main() {
 
 const Container = styled.div`
   width: 60%;
-  margin-left: 24px;
+  margin-left: 20px;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 6px;
@@ -175,6 +175,7 @@ const ShareBox = styled(CommonCard)`
   color: #958b7b;
   margin: 0 0 8px;
   background: white;
+  margin-bottom: 20px;
   div {
     button {
       outline: none;
@@ -184,7 +185,8 @@ const ShareBox = styled(CommonCard)`
       min-height: 48px;
       background: transparent;
       border: none;
-      display: flex;
+      /* display: flex; */
+      cursor: pointer;
       align-items: center;
       font-weight: 600;
     }
@@ -238,6 +240,7 @@ const ModalTitle = styled.div`
     flex: 0;
     margin-left: 280px;
     border: none;
+    cursor: pointer;
     img {
       width: 10px;
     }
@@ -293,6 +296,7 @@ const ModalButtons = styled.div`
     margin-top: 10px;
     width: 100px;
     height: 25px;
+    cursor: pointer;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
