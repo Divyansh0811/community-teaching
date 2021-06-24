@@ -1,18 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
+import { selectUser } from "../features/userSlice";
 import styled from "styled-components";
 import Header from "./Header";
 import LeftSide from "./LeftSide";
 import Main from "./Main";
 import RightSide from "./RightSide";
+import axios from "axios"
 const Home = (props) => {
+  const user = useSelector(selectUser);
+  const [isAdmin, setisAdmin] = useState(false)
+
+   const checkAdmin = async () => {
+      const admin = await axios.post('https://thawing-beyond-70742.herokuapp.com/admin',{ email:user.email}) 
+      console.log(admin)
+      if(admin.data === true){
+        setisAdmin(true)
+      }
+    }
+
+  useEffect(() => {
+    checkAdmin(user.email)
+
+  }, [])
+
   return (
     <Container>
-      <Header />
+      <Header isAdmin={isAdmin}/>
       <Section>
-        <h5>
-          <a>Have a Doubt? -</a>
-        </h5>
-        <p> Ask your doubt and get it solved.</p>
+
+         <h5>
+         <a>Have a Doubt? -</a>
+         </h5>
+         <p> Ask your doubt and get it solved.</p>
       </Section>
       <Layout>
         <LeftSide />

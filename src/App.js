@@ -20,10 +20,11 @@ function App() {
             displayName: authUser.displayName,
             photo: authUser.photoURL,
           })
-        );
-      } else {
-        dispatch(logout());
-      }
+          );
+        } else {
+          dispatch(logout());
+        }
+        console.log(authUser.email)
       console.log(authUser);
     });
   }, [dispatch]);
