@@ -5,6 +5,7 @@ import { selectUser } from "../features/userSlice";
 import firebase from "firebase";
 import db, { auth } from "./firebase";
 import Article from "./Article";
+import ReactPlayer from "react-player";
 const LeftSide = (props) => {
   const user = useSelector(selectUser);
   return (
@@ -20,7 +21,7 @@ const LeftSide = (props) => {
             {user.displayName}
           </a>
         </UserInfo>
-        <Widget>
+        {/* <Widget>
           <a>
             <div>
               <span>Ask your questions</span>
@@ -33,8 +34,34 @@ const LeftSide = (props) => {
             <img src="/images/item-icon.svg" alt="" />
             My Questions
           </span>
-        </Item>
+        </Item> */}
       </ArtCard>
+      <Video>
+        <h3
+          style={{
+            fontFamily: "Merriweather",
+            marginTop: "10px",
+            marginBottom: "10px",
+          }}
+        >
+          Relaxation Videos
+        </h3>
+        <ReactPlayer
+          width="100%"
+          height="100%"
+          url="https://www.youtube.com/watch?v=i50ZAs7v9es"
+        />
+        <ReactPlayer
+          width="100%"
+          height="100%"
+          url="https://www.youtube.com/watch?v=nmFUDkj1Aq0"
+        />
+        <ReactPlayer
+          width="100%"
+          height="100%"
+          url="https://www.youtube.com/watch?v=I-SFdhVwrVA"
+        />
+      </Video>
     </Container>
   );
 };
@@ -155,4 +182,7 @@ const Item = styled.a`
   }
 `;
 
+const Video = styled.div`
+  margin-top: 20px;
+`;
 export default LeftSide;

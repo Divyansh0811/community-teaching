@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 function FetchQuote() {
-  useEffect(() => {
-    fetch("http://quotes.rest/qod.json?category=inspire")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setQuote(data.contents.quotes[0].quote);
-        setAuthor(data.contents.quotes[0].author);
-      });
-  }, []);
-  const [quote, setQuote] = useState("");
-  const [loading, setLoading] = useState(true);
-  const [author, setAuthor] = useState("");
+  // useEffect(() => {
+  //   fetch("http://quotes.rest/qod.json?category=inspire")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //       setQuote(data.contents.quotes[0].quote);
+  //       setAuthor(data.contents.quotes[0].author);
+  //     });
+  // }, []);
+  // const [quote, setQuote] = useState("");
+  // const [loading, setLoading] = useState(true);
+  // const [author, setAuthor] = useState("");
   return (
     <>
       <Container>
         <QuoteTop> ‘‘ </QuoteTop>
         <Qoute>
-          <h1>{quote}</h1>
-          <p>- {author}</p>
+          <h1>You must be the change you want to see in the world</h1>
+          <p>- M.K.Gandhi</p>
         </Qoute>
       </Container>
     </>
